@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DsvendasApplication<dsvendas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.devsuperior.dsvendas.DsvendasApplication",
+            "projectName": "dsvendas",
+            "args": ""
+        }
+    ]
+}
