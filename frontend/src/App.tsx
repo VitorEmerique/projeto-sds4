@@ -8,29 +8,28 @@ import NavBar from "components/NavBar";
 function App() {
   return (
     <>
-            <NavBar />
-            <div className="container">
-                <h1 className="text-primary py-3">Dashboard de Vendas</h1>
+      <NavBar />
+      <div className="container">
+        <h1 className="text-primary py-3">Dashboard de vendas</h1>
+        <div className="row px-3">
+          <div className="col-sm-6">
+            <h5 className="text-center text-secondary">Taxa de sucesso</h5>
+            <BarChart />
+          </div>
+          <div className="col-sm-5">
+            <h5 className="text-center text-secondary">Taxa de sucesso</h5>
+            <DonutsChart />
+          </div>
+          <div className="py-3">
+            <h2 className="text-primary">Todas vendas</h2>
+          </div>
 
-                <div className="row">
-                    <div className="col-sm-6 px-3">
-                        <h5 className="text-secondary text-center">Taxa de Sucesso (%)</h5>
-                        <BarChart />
-                    </div>
-                    <div className="col-sm-6 px-3">
-                        <h5 className="text-secondary text-center">Todas Vendas</h5>
-                        <DonutsChart />
-                    </div>
-                </div>
+        </div>
+        <DataTable />
+      </div>
+      <Footer />
 
-                <div className="py-3">
-                    <h2 className="text-primary">Todas Vendas</h2>
-                </div>
-
-                <DataTable />
-            </div>
-            <Footer />
-        </>
+    </>
   );
 }
 
